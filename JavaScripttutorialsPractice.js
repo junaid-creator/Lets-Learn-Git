@@ -2792,8 +2792,18 @@
 //     age: 333,
 //     class: 'Abc'
 // }
+<<<<<<< HEAD
 Object.defineProperty(Student, 'height', {
     value: 'def'
 })
 console.log(Student)
 console.log("These are total Students =  and L+" + Students )
+=======
+// Object.defineProperty(Student, 'height', {
+//     value: 'def'
+// })
+// console.log(Student)
+
+//New lines added for git prctice.
+>>>>>>> dev
+//Now changes for github
