@@ -2796,4 +2796,4 @@ Object.defineProperty(Student, 'height', {
     value: 'def'
 })
 console.log(Student)
-console.log("These are total Students = " + Students )
+console.log("These are total Students =  and L+" + Students )
