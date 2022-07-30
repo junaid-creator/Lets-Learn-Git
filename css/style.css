@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: arial;
+    display: flex;
+    flex-direction: column;
+    /* background: red; */
+    margin: 0px;
+}
+header {
+    background: yellowgreen;
+    display: flex;
+    align-items: center;
+    /* padding: 10px 0;        padding: topBotton leftRight */
+}
+header ul{
+    list-style: none;
+    display: flex;
+}
+a {
+    text-decoration: none;
+}
+#logo{
+    margin: 0 auto;
+}
+#menu li{
+    padding: 10px;
+}
+/* #social-links {
+    padding: 10px;
+} */

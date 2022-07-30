@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- <link rel="icon" href="<%= BASE_URL %>favicon.ico"> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <!-- <title>JavaScript Objects</title> -->
+    <script src="JavaScripttutorialsPractice.js"></script>
+    <script src="https://kit.fontawesome.com/526cfa4f15.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    
+    
+    <!-- <style>
+      #outer{
+        width: 80%;
+        height: 80%;
+        padding: 60px 60px;
+        background: orange
+      }
+      #inner{
+        width: 80%;
+        height: 80%;        padding: 60px 60px;
+        background: pink;
+        display: flex
+      }
+      #child-C{
+        width: 10%;
+        height: 10%;padding: 20px 20px;
+        border: 20px solid pink;
+        background: red
+      }
+      #A{
+        width: 10%;
+        height: 10%;padding: 20px 20px;
+        border: 20px solid pink;
+        background: red
+      }
+      #B{
+        width: 10%;
+        height: 10%;padding: 20px 20px;
+        border: 20px solid pink;
+        background: red
+      }
+      #D{
+        width: 10%;
+        height: 10%;padding: 20px 20px;
+        border: 20px solid pink;
+        background: red
+      }
+      #E{
+        width: 10%;
+        height: 10%;padding: 20px 20px;
+        border: 20px solid pink;
+        background: red
+      } -->
+      <!-- /* #A,B,C,D,E{
+        /* flex: 1; */
+        
+      } */
+    </style> -->
+
+
+<!-- =============================================== -->
+
+<style>
+  /* CSS flexbox => we are only able to build one dimensional layouts with flexbox while CSS grid is two dimensional */
+  /* CSS Grid => Can handle both rows and columns at the same time but css flexbox is not able to handle both at a time */
+  /* *{ margin: 0; padding: 0 ; box-sizing: border-box }
+  section {
+    width: 100%;
+    height: 65vh;
+    background: cyan;
+    display: flex; */
+    /* flex container vs flex items */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* -------------------------------------- */
+  /* justify-content => works horizontally  */
+  /* ------------------------------------------ */
+    /* justify-content: flex-start; */        
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-around;  => Equal space between elements but half from the margin     */
+    /* justify-content: space-between;    => Distributes space between elements eqully */
+    /* justify-content: space-evenly;     => Equal space from all sides  */
+    /* flex-flow: column wrap; */
+    /* flex-flow => is the combination of flex-direction and flex-wrap  */
+         /* flex-flow is the shorthand for flex-direction and flex wrap  */
+    /* ---------------------------------------------- */
+    /* align-items => works veritcally */
+    /* --------------------------------------------------- */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: center; */
+    /* flex-wrap: wrap;     => Adjust items in given space (makes design responsive) */
+    /* flex-wrap: wrap-reverse; */
+    /* -------------------------------- */
+    /* flex-wrap => is used to adjust the sizes according to the content and screen , means makes content responsive without media queries */
+    /* ---------------------------------------- */
+  /* }
+  .flexItemOne { */
+    /* flex: 1; */
+    /* background: red; */
+    /* order: 3;     */
+    /* flex-grow: 1;      */
+  /* } */
+  /* Item with greatest order comes at last */
+  /* .flexItemTwo { */
+    /* flex: 1; */
+    /* background: green; */
+    /* order: 1;  */
+    /* align-self: center; */
+    /* flex-grow: 1; */
+  /* } */
+  /* .flexItemThree { */
+    /* flex: 2 ; */
+    /* background: yellow; */
+    /* flex-shrink: 4 ; */
+    /* order: 2; */
+    /* flex-grow: 3; */
+  /* } */
+  /* section div { */
+    /* width: 30%;  */
+    /* Always use flex-basis instead of width while using flexbox, because it gives more responsiveness */
+    /* flex-basis: 30%;  => flex-basis means initial  */
+    /* flex: 1 1 20em;      => flex-basis: stretch shrink flex-basis;  */
+    /* padding: 20px;
+    height: 20vh;
+    border: 1px solid black;
+  }
+</style> */
+
+
+
+<!-- ======================================================================== -->
+  </head>
+  <body>
+    /* <!-- <body onkeypress="allert()" onresize="resized()" onscroll="scrolled()"> -->
+      <!-- <input type="submit" value="Show Dog" id="btn"> <br >
+        <img src="dog.jpg" alt="" id="image"> -->
+        <!-- <noscript>
+          <strong>We're sorry but real-world-vue doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+        </noscript> -->
+        <!-- <div id="abc" class="xyz" style="border: 2px solid black">
+          <p id="aabc" class="jkl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta quasi deleniti minima ab voluptate cupiditate suscipit perspiciatis itaque, porro aspernatur!</p>
+          <button >Click Me...</button>
+          <h1>Headersrsr</h1>
+          <h1>Paras</h1>
+          <h1>Quotations</h1>
+        </div> -->
+        <!-- <button id="mybtn">Click Me</button> -->
+        
+      <!--  
+        <button id="myBtn">Click Me</button>
+      -->
+        <!-- Enter your Name:<input type="text" id="fname" onkeyup="myFunction()"><br />
+          My name is:<span id="demo"></span> -->
+          <!-- <input type="text" onkeyup="betterFunction()" /> -->
+        <!-- </div>
+      </div>
+      <div> -->
+        <!-- <center>
+          <div>
+            <form oninput="store.value=parseInt(n1.value)+parseInt(n2.value)">
+              <input type="text" name="n1" placeholder="type text1">
+              <input type="text" name="n2" placeholder="type text 2">
+              Output is: <output name="store"></output>
+            </form>
+          </div>
+        </center> -->
+      
+      <!-- <div>
+        <label>Username: <input id="input-normal" /></label>
+        <output></output>
+        
+        <label>Username::<input id="input-debounced" /></label>
+        <output></output>
+      </div> -->
+      <!-- <form>
+        <label>Username:</label>
+        <input type="text" name="thapa">
+      </form> -->
+
+      <!-- <div>
+        
+        <input id="debounced">
+      </div> -->
+    /* <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+    <!-- <script src="lodash.js"></script> --> */
+    
+    /* <!-- <div id="app"></div> --> */
+    <!-- built files will be auto injected -->
+
+      <header>
+        <nav id="menu">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>  
+        </nav>
+          <div id="logo">
+           <a href="">Yahoo Baba</a>
+          </div>
+          <nav id="social-links">
+          /* <div id="social-links">
+            <ul>
+              <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-google-plus-g"></i></a></li>
+            </ul>  
+          </div> */
+        </nav>  
+      </header>
+      <script src="JavaScripttutorialsPractice.js"></script>
+
+
+ 
+
+  </body>
+  </html>    
