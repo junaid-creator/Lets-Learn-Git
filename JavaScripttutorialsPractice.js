@@ -2792,7 +2792,8 @@
 //     age: 333,
 //     class: 'Abc'
 // }
-// Object.defineProperty(Student, 'height', {
-//     value: 'def'
-// })
-// console.log(Student)
+Object.defineProperty(Student, 'height', {
+    value: 'def'
+})
+console.log(Student)
+console.log("These are total Students = " + Students )
